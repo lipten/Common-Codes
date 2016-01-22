@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans" ms-controller='virgin'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="keywords" content="快积分">
+    <meta name="description" content="快积分">
+    <meta name="robots" content="index,follow">
+    <style>
+        body{
+            padding:0;margin:0
+        }
+        .hide{
+            display:none;
+        }
+        .input-money{
+            width:100%;height: 40px;background: #fff;line-height:40px;text-align:right;padding:0 10px;box-sizing: border-box
+        }
+        .pre-text{
+            color:#aaa;position:absolute;right:10px;top:13px;
+        }
+        table{
+            width:100%;text-align: center
+        }
+        table tr{
+            height:30px;
+        }
+        table td {
+            width: 25%;
+        }
+    </style>
+
+    <title>输入金额键盘</title>
+</head>
+<body ontouchstart=''>
+<article>
+    <div id="input-money" class="input-money"></div>
+    <span id="pretext" class="pre-text">输入转入金额</span>
+    <table border="1" bodercolor="#000" cellspacing="0">
+        <tr>
+            <td onclick="V.type(1)">1</td>
+            <td onclick="V.type(2)">2</td>
+            <td onclick="V.type(3)">3</td>
+            <td rowspan="2" onclick="V.type('back')"><</td>
+        </tr>
+        <tr>
+            <td onclick="V.type(4)">4</td>
+            <td onclick="V.type(5)">5</td>
+            <td onclick="V.type(6)">6</td>
+
+        </tr>
+        <tr>
+            <td onclick="V.type(7)">7</td>
+            <td onclick="V.type(8)">8</td>
+            <td onclick="V.type(9)">9</td>
+            <td rowspan="2" onclick="V.transfer()">ok</td
+        </tr>
+        <tr>
+            <td onclick="V.type('down')">^</td>
+            <td onclick="V.type(0)">0</td>
+            <td onclick="V.type('.')">.</td>
+
+        </tr>
+    </table>
+
+</article>
+
+</body>
+<script src="main.js" defer async></script>
+</html>
